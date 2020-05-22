@@ -1,0 +1,6 @@
+datadog:
+  apm:
+    enabled: true
+  tags:
+    - environment:development
+    - env:dev

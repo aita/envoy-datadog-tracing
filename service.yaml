@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: datadog-agent-tracer
+spec:
+  type: ClusterIP
+  clusterIP: None
+  selector:
+    app: datadog-agent
+  ports:
+    - name: datadog-tracer
+      port: 8126
+      protocol: TCP
+      targetPort: 8126
