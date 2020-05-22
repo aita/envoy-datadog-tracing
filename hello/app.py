@@ -7,6 +7,6 @@ from ddtrace.contrib.bottle import TracePlugin
 def index():
     return 'hello'
 
-plugin = TracePlugin(service="hello-app")
+plugin = TracePlugin(service="my-web-app")
 install(plugin)
 run(host='0.0.0.0', port=8000)
